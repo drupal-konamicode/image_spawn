@@ -17,7 +17,7 @@
     let screen_size_array = [];
     images_array.forEach(function (image) {
       let image_object = new Image();
-      image_object.onload = function() {
+      image_object.onload = function () {
         screen_size_array.push({
           'image': image,
           'width': $(document).width() - this.width,
